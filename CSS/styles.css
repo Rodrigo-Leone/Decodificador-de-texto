@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria: #3F2929;
+    --cor-secundaria: #FFF8EA;
+
+    --cor-btn-primaria: #594545;
+    --cor-btn-secundaria: #D7C0AE;
+    --cor-hover-primaria:#495057;
+
+    --f-primaria: "Kode Mono", monospace;
+
+    --f-size-primaria: 2rem;
+    --f-size-secundaria: 1.875rem;
+    --f-size-terciaria: 1.625rem;
+}
+
+body{
+    background-color: #feffed;
+    font-family: "Inter", sans-serif;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.cabecalho-logo-alura{
+    width: 31.09px;
+    height: 48px;
+}
+.cabecalho-titulo{
+    font-family: "Anta", sans-serif;
+    font-size: 4.125rem;
+    color: var(--cor-primaria);
+}
+.cabecalho-titulo spam{
+    font-size: 0.625rem;
+    font-weight: lighter;
+}
+.cabecalho-turma{
+    color: var(--cor-primaria);
+    font-size: var(--f-size-primaria);
+    font-weight: 900;
+}
+
+main{  
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    height: 86.4vh;
+}
+.main-input{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.main-input-text{
+    font-family: var(--f-primaria);
+    font-size: var(--f-size-secundaria);
+    color: var(--cor-primaria);
+    background-color: rgba(0,0,0,0);
+    border:none;
+    width: 80%;
+    height: 80%;
+    padding: 5px 0px 0px 5px;
+    resize: none;
+    text-transform: lowercase;
+}
+::placeholder{
+    opacity: 1;
+    color: var(--cor-primaria);
+}
+.main-input-text:focus{
+   box-shadow: 0;
+   outline: none;
+}
+
+.regra{
+    color: black;
+    width: 78%;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.regra i{
+    color: red;
+}
+
+.btn-input{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 80%;
+    height: 67px;
+}
+.btn-input-criptografar{
+    width: 50%;
+    border-radius: 24px;
+    border: none;
+    background-color: var(--cor-btn-primaria);
+    color: var(--cor-btn-secundaria);
+    font-size: var(--f-size-terciaria);
+    letter-spacing: 2px;
+}
+.btn-input-criptografar:hover{
+    border: 2px solid var(--cor-hover-primaria);
+    background-color: var(--cor-btn-secundaria);
+    color: var(--cor-hover-primaria);
+    cursor: pointer;
+}
+.btn-input-descriptografar{
+    width:50%;
+    border-radius: 24px;
+    border: 2px solid var(--cor-btn-primaria);
+    background-color: var(--cor-btn-secundaria);
+    color: var(--cor-btn-primaria);
+    font-size: var(--f-size-terciaria);
+    letter-spacing: 2px;
+}
+.btn-input-descriptografar:hover{
+    border: none;
+    background-color: var(--cor-hover-primaria);
+    color: var(--cor-btn-secundaria);
+    cursor: pointer;
+}
+
+.main-output{
+    background-color: #FEFCF3;
+    width: 30%;
+    border-radius: 32px;
+    height: 98%;
+}
+
+.main-output-inicial{
+    display: flex;
+    text-align: center;
+    font-family: var(--f-primaria);
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+.inicial-img{
+    width: 80%;
+    margin-bottom: 50px;
+}
+#titulo, #copiado, #paragrafo {
+    display: none;
+    color: var(--cor-primaria);
+}
+.main-output-inicial h1{
+    font-size: 3rem;
+}
+.main-output-inicial h3{
+    font-size: var(--f-size-primaria);
+}
+
+.main-output-oculto{ 
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+.main-output-oculto-text{
+    font-family: var(--f-primaria);
+    font-size: var(--f-size-secundaria);
+    color: var(--cor-primaria);
+    background-color: rgba(0,0,0,0);
+    border: none;
+    width: 95%;
+    height: 87%;
+    padding: 5px 0px 0px 5px;
+    resize: none;
+}
+.main-output-oculto-text:focus{
+    box-shadow: 0;
+    outline: 0;
+}
+.btn-copiar{
+    width: 70%;
+    height: 67px;
+    border-radius: 24px;
+    border: none;
+    background-color: var(--cor-hover-primaria);
+    color: var(--cor-btn-secundaria);
+    font-size: var(--f-size-terciaria);
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.btn-copiar:hover{
+    border: 2px solid black;
+    background-color: var(--cor-btn-secundaria);
+    color: black;
+    cursor: pointer;
+}
+
+.rodape{
+    padding: 10px 0;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.rodape-texto{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+}
+.rodape-texto span{
+    font-family: "Dancing Script", cursive;
+    font-size:  var(--f-size-primaria);
+    font-weight: 700;
+}
+.rodape-link{
+    font-size: var(--f-size-primaria);
+    color: #7895B2;
+}
+.rodape-link:hover{
+    color: #F0968D;
+}
+
+@media (max-width: 768px){
+    .cabecalho-logo-alura{
+        width: 23.09px;
+        height: 40px;
+    }
+    .cabecalho-titulo{font-size: 3rem;}
+    .cabecalho-turma{font-size: 1.25rem;}
+
+    main{
+        display: block;
+        height: 90vh;
+    }
+    .main-input{
+        width: 100%;
+        height: 65%;
+    }
+    .main-output{
+        width: 90%;
+        margin: 0 40px;
+        height: 35%;
+    }
+    .inicial-img{display: none;}
+    .main-output-oculto-text{height: 70%;}
+}
+
+@media (max-width: 375px){
+    .cabecalho{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    main{height: 86vh;}
+    .main-input-text{font-size: var(--f-size-terciaria);}
+    .regra{
+        width: 95%;
+        font-size: 0.73rem;
+        letter-spacing: 0;
+        font-weight: normal;
+    }
+    .btn-input{
+        height: 26%;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    .btn-input-criptografar{
+        width: 100%;
+        height: 46px;
+        border-radius: 15px;
+    }
+    .btn-input-descriptografar{
+        width: 100%;
+        height: 46px;
+        border-radius: 15px;
+    }
+    .main-output{
+        width: 95%;
+        margin: 0 8px;
+        height: 36%;
+    }
+    .main-output-oculto-text{font-size: var(--f-size-terciaria);}
+    .btn-copiar{
+        width: 85%;
+        height: 46px;
+        border-radius: 15px;
+    }
+    .rodape-texto{font-size: 1.15rem;}
+    .rodape-texto span{font-size: 1.5rem;}
+    .rodape-link{font-size: 1.6rem;}
+}

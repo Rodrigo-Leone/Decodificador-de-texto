@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html"><img class="cabecalho-logo-alura" src="images/logo.png" alt="Logo da Alura" /></a>
+        <h1 class="cabecalho-titulo">Enigma<spam> versão 0.1</spam></h1>
+        <h2 class="cabecalho-turma">ONE - Alura / Turma 6 - 2024</h2>
+    </header>
+    <main>
+        <section class="main-input">
+            <textarea class="main-input-text" placeholder="Digite seu texto aqui."></textarea>
+            <p class="regra"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Apenas letras minusculas, sem acento e caracteres especiais.</p>
+            <div class="btn-input">
+                <button class="btn-input-criptografar" onclick="btnEncriptar()"><i class="fa fa-lock" aria-hidden="true"></i> Criptografar</button>
+                <button class="btn-input-descriptografar" onclick="btnDesencriptar()"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Descriptografar</button>
+            </div>
+        </section>
+        <section class="main-output">
+            <div id="inicial" class="main-output-inicial">
+                <img class="inicial-img" src="images/criptografia.png" alt="Figura de Criptografia">
+                <h3 id="titulo">Nenhuma mensagem encontra!</h3>
+                <h1 id="copiado">Texto copiado!</h1>
+                <h2 id="paragrafo">Digite um texto que você deseja criptografar ou descriptografar!</h2>
+            </div>
+            <div id="oculto" class="main-output-oculto">
+                <textarea class="main-output-oculto-text" id="texto"></textarea>
+                <button id="copiar" class="btn-copiar" onclick="copiar()"><i class="fa fa-files-o" aria-hidden="true"></i> Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <h2 class="rodape-texto">Desenvolvido por <span>Rodrigo Leone</span>.</h2>
+        <a class="rodape-link" href="https://github.com/Rodrigo-Leone/Decodificador-de-texto"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
